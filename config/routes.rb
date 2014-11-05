@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  
+  # GET / Loads the index action of the tasks controller
+  root "tasks#index"
+  
+  # GET /tasks/# loads the show action of the tasks controller
+  get "tasks/:id" => "tasks#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
