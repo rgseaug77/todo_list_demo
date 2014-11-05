@@ -1,5 +1,5 @@
 <ul>
   <%@tasks.each do |x|%>
-    <li><%=x.description%></li>
+    <li><%= link_to x.description, x%></li>
   <%end%>
 </ul>
